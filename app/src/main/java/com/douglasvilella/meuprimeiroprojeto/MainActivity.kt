@@ -15,6 +15,5 @@ class MainActivity : AppCompatActivity() {
     fun jogarDado(view: View){
         var texto = findViewById<View>(R.id.txtMensagem) as TextView
         texto.setText("Teste")
-        /*adicionei um comentario no MainActivity*/
     }
 }
