@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
         // Executando instruções após determinado tempo
         Handler(Looper.getMainLooper()).postDelayed({
             // Uma das utilidades da classe Intent é usá-la para abrir uma activity
-            val mIntent = Intent(this@SplashActivity,MainActivity::class.java)
+            val mIntent = Intent(this@SplashActivity,LoginActivity::class.java)
 
             //Método responsável por executar a Intent
 
