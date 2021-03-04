@@ -10,10 +10,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
-
-    fun jogarDado(view: View){
-        var texto = findViewById<View>(R.id.txtMensagem) as TextView
-        texto.setText("Teste")
-    }
 }
