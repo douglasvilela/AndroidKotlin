@@ -18,11 +18,11 @@
         app:srcCompat="@drawable/logocellep" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtLoginEmail"
         android:layout_width="323dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/white"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edtLoginSenha"
         android:layout_width="323dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
@@ -45,31 +45,33 @@
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginEmail" />
 
     <Button
-        android:id="@+id/buttonEntrar"
+        android:id="@+id/btnLoginEntrar"
         android:layout_width="165dp"
         android:layout_height="43dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
+        android:backgroundTint="#FFFFFF"
         android:text="ENTRAR"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginSenha" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnLoginCadastrar"
         android:layout_width="165dp"
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFFFF"
         android:text="CADASTRAR"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/buttonEntrar"
-        app:layout_constraintStart_toStartOf="@+id/buttonEntrar"
-        app:layout_constraintTop_toBottomOf="@+id/buttonEntrar" />
+        app:layout_constraintEnd_toEndOf="@+id/btnLoginEntrar"
+        app:layout_constraintStart_toStartOf="@+id/btnLoginEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginEntrar" />
 
     <ImageView
         android:id="@+id/imageView4"
