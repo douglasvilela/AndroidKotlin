@@ -1,5 +1,6 @@
 package com.douglasvilella.meuprimeiroprojeto
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -32,12 +33,24 @@ class LoginActivity : AppCompatActivity() {
                 binding.edtLoginSenha.requestFocus()
 
             } else{
-                if (email == "teste@teste.com" && senha == "123456"){
+                //Acessando o arquivo de preferencias compartilhadas
+                val sharedPrefs = getSharedPreferences(
+                        "cadastro_$email",
+                        Context.MODE_PRIVATE
+                )
+
+                // recuperando dados no arquivo de preferencias compartilhadas
+                val emailPrefs = sharedPrefs.getString("EMAIL", "")
+                val senhaPrefs = sharedPrefs.getString("SENHA" ,"")
+
+                if (email == emailPrefs && senha == senhaPrefs){
                     //Se tudo estiver certo mensagem de sucesso exibida
                     Toast.makeText(this, "Usuário Logado", Toast.LENGTH_LONG).show()
 
                     //E Em seguida abrir MainActivity
                     val mIntent = Intent(this, MainActivity::class.java)
+                    // Passando o email via Intent para Main Activity
+                    mIntent.putExtra("INTENT_EMAIL", email)
                     startActivity(mIntent)
 
                     finish()

@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txvMainGenero"
+        android:id="@+id/txvMainContinente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gênero"
@@ -28,11 +28,11 @@
         android:text="Email"
         android:textColor="@color/white"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/txvMainGenero"
+        app:layout_constraintBottom_toTopOf="@+id/txvMainContinente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvMainNomeCompleto" />
+        app:layout_constraintTop_toBottomOf="@+id/txvMainNome" />
 
     <TextView
         android:id="@+id/txtHelloWorld"
@@ -42,14 +42,14 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txvMainNomeCompleto"
+        app:layout_constraintBottom_toTopOf="@+id/txvMainNome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txvMainNomeCompleto"
+        android:id="@+id/txvMainNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome Completo"
@@ -72,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvMainGenero" />
+        app:layout_constraintTop_toBottomOf="@+id/txvMainContinente" />
 
     <Button
         android:id="@+id/btnMainSite"
